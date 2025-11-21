@@ -178,11 +178,23 @@
   align-items: center;
   padding: 0 var(--space-page);
 
+  &__title1{
+    text-align: center;
+  }
+
   &__block{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--space-section);
+    gap: 100px;
+
+    @media (max-width:1279px){
+      gap: 64px;
+    }
+
+    @media (max-width:1279px){
+      gap: 40px;
+    }
   }
 }
 
@@ -197,22 +209,21 @@
     text-align: center;
   }
 
-  
   &__container{
     &__block{
       align-items: stretch;
+
       @media(max-width:1279px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: var(--space-block);
+
         &__div{
           display: none;
         }
       }
-      
-    }
-    
+    }    
   }
 
   @media (min-width: 1280px) {
@@ -275,6 +286,10 @@
     flex: 7;
     min-width: 0;
     gap: var(--space-block);
+    &__text1{
+      line-height: 28px;
+
+    }
   }
 
   @media (max-width: 767px) {
