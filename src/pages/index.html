@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Главная</title>
+</head>
+<body>
+    
+    @@include('../components/_header.html')
+
+    <main class="main">
+        <article class="hero" id="hero">
+            <h1 class="hero__title1 h1">
+                Уют с котами и кофе
+            </h1>
+            <p class="hero__text1 p1">
+                Барсик - это антикафе с котами в Нижнем Новгороде, в котором вы
+                платите не за еду, а за время проведенное с котиками. В этом месте
+                всё для комфортного времяпровождения: кофе, чай, печенье, конфеты,
+                книги и настольные игры. Тут каждый найдёт себе занятие по душе!
+            </p>
+        </article>
+
+        <article class="info">
+            <section class="price">
+                <h1 class="price__title1 h1">Сколько стоит?</h1>
+                <table class="price__table">
+                    <tr class='price__table__str'>
+                        <td class="p2 price__table__text"></td>
+                        <td class="p2 price__table__text">Будни</td>
+                        <td class="p2 price__table__text"> Сб-Вс<br> и Праздники</td>
+                    </tr>
+                    <tr class='price__table__str'>
+                        <td class="p2 price__table__text">Первый час:</td>
+                        <td class="p1 price__table__text">300р.</td>
+                        <td class="p1 price__table__text">400р.</td>
+                    </tr>
+                    <tr class='price__table__str'>
+                        <td class="p2 price__table__text">Далее:</td>
+                        <td class="p1 price__table__text">4р./мин</td>
+                        <td class="p1 price__table__text">5р./мин</td>
+                    </tr>
+                    <tr class='price__table__str'>
+                        <td class="p2 price__table__text">Стопчек:</td>
+                        <td class="p1 price__table__text">700р.</td>
+                        <td class="p1 price__table__text">900р.</td>
+                    </tr>
+                </table>                
+            </section>
+
+            <section class="connection">
+                <h1 class="connection__title1 h1">Сколько стоит?</h1>
+                <div class="connection__data">
+                    <div class="connection__data__container">
+                        <p class="connection__data__container__label p2">График:</p>
+                        <p class="connection__data__container__value p1">10:00 - 20:00 Вт - Вс</p>
+                    </div>
+                    <div class="connection__data__container">
+                        <p class="connection__data__container__label p2">Адрес:</p>
+                        <p class="connection__data__container__value p1">г. Нижний Новгород, ул. Пушкина, д. 2</p>
+                    </div>
+                    <div class="connection__data__container">
+                        <p class="connection__data__container__label p2">Телефон:</p>
+                        <a href="" class="connection__data__container__value phone">+ 7 (999) 999 99 99</a>
+                    </div>
+                </div>
+                @@include('_button.html', {
+                    "link":"#appointment",
+                    "text":"Записаться",
+                })
+            </section>
+        </article>
+
+        <article class="advanteges">
+            <img class="advanteges__image" src="assets/images/orangecat.webp" alt="Кот">
+            <section class="advanteges__block">
+                <h1 class="advanteges__block__title h1">Вас ждут котики и не только!</h1>
+                <ol class="advanteges__block__list" type="1.">
+                    <li class="advanteges__block__list__li p1">Большое количество игрушек для игр с котиками.</li>
+                    <li class="advanteges__block__list__li p1">Кофе, чай, молоко, печеньи, конфеты и возможность принести еду с собой.</li>
+                    <li class="advanteges__block__list__li p1">Бесплатный Wi-Fi, книги и настольные игры для комфортного досуга.</li>
+                    <li class="advanteges__block__list__li p1">Чистые, здоровые и ласковые животные.</li>
+                    <li class="advanteges__block__list__li p1">Комфортная обстановка с удобной мебелью, пледами и уютным освещением.</li>
+                </ol>
+                @@include('_button.html', {
+                    "link":"about.html",
+                    "text":"О котокафе",
+                })
+            </section>
+        </article>
+
+        <article class="cats-min">
+            <h1 class="cats-min__title1 h1">Наши новые жители</h1>
+            <div class="cats-min__block">
+                @@include('_cat-min.html', {
+                    "img":"Korgik.svg",
+                    "name":"Коржик",
+                })
+                @@include('_cat-min.html', {
+                    "img":"Karamelka.svg",
+                    "name":"Карамелька",
+                })
+                @@include('_cat-min.html', {
+                    "img":"Kompot.svg",
+                    "name":"Компот",
+                })
+            </div>
+            @@include('_button.html', {
+                "link":"cats.html",
+                "text":"Все котики",
+            })
+        </article>
+
+        <article class="reviews">
+            <h1 class="reviews__title h1">Отзывы наших гостей</h1>
+            <div class="reviews__container">
+                <div class="reviews__container__block">
+                    @@include('_review.html',{
+                        "name":"Лена",
+                        "text":"«Идеальное место для перезагрузки! Отличный кофе, классные вкусности и лучшие мурчики. Проводила весь вечер, общаясь с котиками и читая книгу.»"
+                    })
+                    @@include('_review.html',{
+                        "name":"Егор",
+                        "text":"«Недавно открыл для себя этот райский уголок. Приходишь вечером после работы, забываешь обо всём плохом, сидишь с книжкой, пьёшь вкусный кофе и гладишь котиков.»"
+                    })
+                    @@include('_review.html',{
+                        "name":"Ольга",
+                        "text":"«Знакомые посоветовали и не прогадали. Теперь каждые выходные прихожу сюда отдохнуть от суеты. Спасибо большое сотрудникам за заботу о животных!»"
+                    })
+                    @@include('_review.html',{
+                        "name":"Сергей",
+                        "text":"«Регулярно прихожу сюда с дочкой, ей безумно нравятся котята. Атмосфера чудесная, персонал приветливый, всё супер!»"
+                    })
+                    @@include('_review.html',{
+                        "name":"Петя",
+                        "text":"«Настоящий анти-стресс центр! Перед экзаменами нашёл идеальное место, чтобы успокоиться и расслабиться. Буду рекомендовать каждому другу-студенту, нуждающемуся в релаксе.»"
+                    })
+                    @@include('_review.html',{
+                        "name":"Анна",
+                        "text":"«Семейный выход получился волшебным! Дети были вне себя от радости, много играли с котиками. Отдельное спасибо персоналу за помощь и внимание.»"
+                    })
+                    <div class="reviews__container__block__div">.</div>                  
+                </div>
+            </div>
+        </article>
+
+        @@include('../components/_appointment.html')
+    </main>
+
+    @@include('../components/_footer.html')
+</body>
+</html>

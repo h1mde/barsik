@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Наши хвостатые жители</title>
+</head>
+<body>
+    @@include('../components/_header.html')
+
+    <main class="main">
+        <article class="cats-max">
+            <h1 class="cats-max__title1 h1">Наши хвостатые жители</h1>
+            <div class="cats-max__block">
+                @@include('_cat-max.html',{
+                    "img":"Felix.svg",
+                    "name":"Феликс",
+                    "age":"2 года",
+                    "character":"Спокойный и независимый",
+                    "traits":"Крупный и элегатный",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Matroskin.svg",
+                    "name":"Матроскин",
+                    "age":"10 лет",
+                    "character":"Умный и спокойный",
+                    "traits":"Пушистый и мягкошерстный",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Bysinka.svg",
+                    "name":"Бусинка",
+                    "age":"2 года",
+                    "character":"Игривая и ласковая",
+                    "traits":"Лапки в носочках",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Sosiska.svg",
+                    "name":"Сосиcка",
+                    "age":"3 года",
+                    "character":"Ласковый и озорной",
+                    "traits":"Утонченный и длиннолапый",
+                })
+
+                 @@include('_cat-max.html',{
+                    "img":"Matilda.svg",
+                    "name":"Матильда",
+                    "age":"5 лет",
+                    "character":"Умная и дружлюбная",
+                    "traits":"Пятнышко на носу",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Tom.svg",
+                    "name":"Том",
+                    "age":"6 лет",
+                    "character":"Ласковый и самостоятельный",
+                    "traits":"Маленькие ушки и коротий хвост",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Garfild.svg",
+                    "name":"Гарфилд",
+                    "age":"9 лет",
+                    "character":"Соня и гурман",
+                    "traits":"Упитанный и мягкошерстный",
+                })
+                @@include('_cat-max.html',{
+                    "img":"Markiza.svg",
+                    "name":"Маркиза",
+                    "age":"6 лет",
+                    "character":"Игривая и ласковая",
+                    "traits":"Хвост завитком",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"leopold.svg",
+                    "name":"Леопольд",
+                    "age":"7 лет",
+                    "character":"Умный и спокойный",
+                    "traits":"Кисточки на ушках",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Kompot.svg",
+                    "name":"Компот",
+                    "age":"7 лет",
+                    "character":"Спокойный и ласковый",
+                    "traits":"Упитанный",
+                })
+                 @@include('_cat-max.html',{
+                    "img":"Karamelka.svg",
+                    "name":"Карамелька",
+                    "age":"5 лет",
+                    "character":"Активная и любознательная",
+                    "traits":"Пушистая и маленькая",
+                })
+            
+                 @@include('_cat-max.html',{
+                    "img":"Korgik.svg",
+                    "name":"Коржик",
+                    "age":"6 лет",
+                    "character":"Активная и игривый",
+                    "traits":"Маленький и полосатый",
+                })
+            </div>
+        </article>
+        @@include('../components/_appointment.html')
+    </main>
+
+    @@include('../components/_footer.html')
+    </body>
+</html>

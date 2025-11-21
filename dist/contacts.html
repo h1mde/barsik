@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Конатакты</title>
+</head>
+<body>
+    
+    <header class="header">
+    <a class="header__logo" href="index.html">
+        <img src="assets/images/logo.svg" alt="" class="header__logo__img">
+        <h1 class="header__logo__name logo__name">БАРСИК
+    </h1></a>  
+    
+    <input type="checkbox" id="toggle1" class="toggle-checkbox">
+    <label for="toggle1" class="toggle-label"></label>
+     
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="cats.html" class="nav__link">Котики</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="contacts.html" class="nav__link">Контакты</a> 
+    </nav>    
+</header>
+
+
+
+
+
+    <main class="main">
+        <article class="connection">
+            <h1 class="connection__title1 h1">Связь</h1>
+            <div class="connection__data">
+                <div class="connection__data__container">
+                    <p class="connection__data__container__label p2">График:</p>
+                    <p class="connection__data__container__value p1">10:00 - 20:00 Вт - Вс</p>
+                </div>
+                <div class="connection__data__container">
+                    <p class="connection__data__container__label p2">Телефон:</p>
+                    <a href="" class="connection__data__container__value phone">+ 7 (999) 999 99 99</a>
+                </div>
+            </div>
+        </article>        
+
+        <article id="appointment" class="appointment">
+            <h1 class="appointment__title h1">Свяжитесь с нами</h1>
+            <div class="appointment__container">
+                <form class="form" id="callbackForm">
+                    <p class="form__text1 p1">
+                    Оставьте свой номер телефона и мы перезвоним Вам
+                    </p>
+                    <div class="form__tel">
+                        <label for="form__tel__label"></label>
+                        <input type="tel" class="form__tel__input p2" id="phone" name="phone" placeholder="+7 (999) 000 00 00">
+                    </div>
+                    <button type="submit" class="form__button button" id="submit">
+                        Перезвоните мне!
+                    </button>
+                </form>
+                <div class="to-call">
+                    <p class="to-call_text1 p1">Или позвоните нам сами:</p>
+                    <a href="" class="to-call_phone phone">+ 7 (999) 999 99 99</a>
+                </div>
+            </div>    
+        </article>
+
+        <article class="adress">
+            <h1 class="adress__title1 h1">Адрес</h1>
+            <p class="adress__text1 p1">г. Нижний Новгород, ул. Пушкина, д. 2</p>
+            <img src="assets/images/karta.webp" alt="" class="adress__map">
+        </article>
+
+    </main>
+
+    <footer class="footer">
+    <img src="assets/images/logo3.svg" alt="logo" class="footer__logo">
+
+    <nav class="footer__nav">
+        <a href="index.html" class="footer__nav__link p2">Главная</a>
+        <a href="#appointment" class="footer__nav__link p2">Запись</a>
+        <a href="cats.html" class="footer__nav__link p2">Котики</a>
+        <a href="about.html" class="footer__nav__link p2">О нас</a>
+        <a href="conatacts.html" class="footer__nav__link p2">Контакты</a>
+    </nav> 
+
+    <div class="footer__contacts">
+        <a href="https://web.telegram.org" class="footer__contacts__social">
+            <img src="assets/images/telegram.svg" alt="" class="footer__contacts__social__icon">
+        </a>
+        <a href="https://vk.com" class="footer__contacts__social">
+            <img src="assets/images/vk.svg" alt="" class="footer__contacts__social__icon">
+        </a>
+    </div>
+    <p class="footer__copyrights p2">
+        © Барсик, 2025
+    </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+    src: url('../fonts/Klavika-Basic.woff2') format(woff2), 
+        url('../fonts/Klavika-Basic.woff') format(woff), 
+        url('../fonts/Klavika-Basic.otf') format(otf);
+    font-family: "Klavika Basic";
+    font-display: swap;
+}
+@font-face{
+    src: url('../fonts/Helvetica.woff2') format('woff2'), 
+        url('../fonts/Helvetica.woff') format('woff'), 
+        url('../fonts/Helvetica.otf') format('otf');
+    font-family: "Helvetica";
+    font-display: swap;
+    font-weight: 500;
+
+}
+@font-face{
+    src: url('../fonts/Helvetica_light.woff2') format('woff2'), 
+        url('../fonts/Helvetica_light.woff') format('woff'), 
+        url('../fonts/Helvetica_light.otf') format('otf');
+    font-family: "Helvetica";
+    font-display: swap;
+    font-weight: 300;
+}
+@font-face{
+    src: url('../fonts/Helvetica_bold.woff2') format('woff2'), 
+        url('../fonts/Helvetica_bold.woff') format('woff'), 
+        url('../fonts/Helvetica_bold.otf') format('otf');
+    font-family: "Helvetica";
+    font-display: swap;
+    font-weight: 700;
+}
+
+html{
+   font-family: "Helvetica"; 
+   font-size: var(--p);
+}
+.h1{
+    font-size: var(--h1);
+    font-family: "Klavika Basic";
+}
+.h2{
+    font-family: "Klavika Basic";
+    font-size: var(--h2);
+    font-weight: 700;
+}
+.p2{
+    font-family: 'Helvetica';
+    font-size: var(--p);
+    color: var(--grey-dark);
+    font-weight: 500;
+}
+.p1{
+    font-family: 'Helvetica';
+    font-size: var(--p);
+    font-weight: 500;
+}
+.phone{
+    font-family: 'Helvetica';
+    font-size: var(--link-phone);
+    color: var(--orange);
+    font-weight: 700;
+}
+.phone:hover{
+    text-decoration: underline;
+}
+.button{
+    font-size: var(--button-text);
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+.logo{
+    &__name{
+        font-family: "Klavika Basic";
+        font-size: var(--logo);
+    }
+}

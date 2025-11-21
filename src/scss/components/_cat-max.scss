@@ -1,0 +1,44 @@
+.cat-max{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-element);
+    width: 400px;
+
+    &__list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: stretch;
+
+        @media (max-width: 786px) {
+            width: 300px;
+        }
+
+        &__line{
+            display: flex;
+            justify-content: space-between;
+
+            &__text1{
+                text-align: end;
+            }
+        }
+
+        &__title2{
+            text-align: center;
+        }
+        
+    }
+
+    &__img{
+        width: 228px;
+
+         @media (max-width: 1279px) {
+            width: 165px;
+            
+        }
+    }
+}
+
